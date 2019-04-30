@@ -1,0 +1,357 @@
+@font-face {
+  font-family: "Butler";
+  src: url(butler/Butler_Medium.otf));
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-359deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Butler";
+  overflow-x: hidden;
+}
+
+#loading-animation {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  text-align: center;
+  transition: opacity 1s;
+}
+
+#loading-image {
+  width: 40%;
+  -webkit-animation: rotate 4.5s infinite linear;
+}
+
+.loading-done {
+  display: none;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+
+header img {
+  width: 102px;
+  height: 90px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+nav {
+  height: 33px;
+  background-color: #292929;
+  color: white;
+  font-size: 1.35rem;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  color: white;
+  margin: 0 20vh;
+  position: relative;
+}
+
+nav a:hover {
+  color: #99a285;
+  text-decoration: none;
+}
+
+#aboutLink.highlight {
+  color: #99a285;
+}
+
+#productsLink.highlight {
+  color: #99a285;
+}
+
+#contactLink.highlight {
+  color: #99a285;
+}
+
+.scrollbar {
+  width: 0%;
+  margin-top: 5px;
+  height: 10px;
+  background-color: #013220;
+  z-index: 1;
+}
+
+.mainSection {
+  text-align: center;
+  padding: 0;
+}
+
+div img {
+  margin: 50px;
+}
+
+#products-section {
+  margin: 0;
+  padding-top: 95px;
+  max-width: none;
+}
+
+#products-section p {
+  margin-top: 70px;
+}
+
+#intro-text {
+  text-align: center;
+  padding-top: 200px;
+  margin-left: 20px;
+  margin-right: -20px;
+}
+
+#about-section img {
+  padding-top: 80px;
+  padding-left: 10px;
+  width: 75%;
+}
+
+#products-section img {
+  width: 90%;
+}
+
+#lichen img {
+  transition: margin-left 1.5s;
+}
+
+#shinrin-text {
+  padding: 40px 60px;
+  transition: opacity 3s;
+}
+
+#ingredients {
+  padding-top: 110px;
+  font-size: 1.2rem;
+  transition: opacity 3s;
+}
+
+#ingredients ul {
+  margin-top: 30px;
+  margin-left: 75px;
+}
+
+#salt {
+  margin-left: -25px;
+}
+
+#salt img {
+  transition: margin-right 1.5s;
+}
+
+#contact-form {
+  padding: 90px 220px 60px 220px;
+}
+
+#contact-section {
+  max-width: none;
+  margin: 0;
+}
+
+#contact-form {
+  align-content: center;
+}
+
+.form-style ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-style ul li {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 40px;
+  font-size: 12px;
+  letter-spacing: 3em;
+}
+
+.form-style ul li .field-style {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #013220;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.form-style ul li .field-style:focus {
+  box-shadow: 0 0 5px #99a285;
+  border: 1px solid #99a285;
+}
+
+.form-style ul li .field-split {
+  width: 350px;
+}
+
+.form-style ul li .field-full {
+  width: 350px;
+  height: 70px;
+}
+
+.form-style ul li input[type="submit"] {
+  font-weight: bold;
+  border: 1px solid #013220;
+  display: inline-block;
+  cursor: pointer;
+  color: #013220;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: -70px;
+  padding: 0;
+}
+
+footer svg {
+  fill: #013220;
+}
+
+/* for mobile and smaller views */
+@media screen and (max-width: 992px) {
+  #loading-image {
+    width: 60%;
+  }
+
+  nav a {
+    margin: 10vh;
+    font-size: 1.2rem;
+  }
+
+  .mainSection p {
+    padding: 0 25px;
+  }
+
+  #intro-text {
+    margin: -10px 10px -150px -10px;
+  }
+
+  #about-section img {
+    padding-top: 140px;
+  }
+
+  #products-section {
+    padding-top: 80px;
+  }
+
+  #products-section ul {
+    padding: 30px;
+  }
+
+  #lichen {
+    margin: 0;
+  }
+
+  #shinrin-text {
+    margin-top: -30px;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  #ingredients {
+    padding-top: 50px;
+  }
+
+  #ingredients ul {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  #contact-form {
+    padding: 80px 0 10px 50px;
+    margin: 0 0 20px -30px;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+
+/* breakpoint for bootstrap, afterwhich elements stay opaque */
+@media screen and (max-width: 768px) {
+  #products-section p, ul {
+    opacity: 1;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    overflow: hidden;
+  }
+
+  nav a {
+    margin: 4.5vh;
+    font-size: 1rem;
+  }
+
+  .mainSection p {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  #lichen {
+    margin-left: -25px;
+  }
+
+  #shinrin-text {
+    margin: -110px 10px 0 25px;
+  }
+
+  #ingredients {
+    padding-top: 30px;
+  }
+
+  #contact-form {
+    padding: 10px 0 40px 0;
+    margin: 0 0 20px -50px;
+  }
+
+  #products-section {
+    padding-top: 10px;
+  }
+
+  #products-section ul {
+    padding: 10px;
+  }
+
+  .form-style {
+    width: 60%;
+    margin-left: 150px;
+  }
+
+  .form-style ul li .field-split {
+    width: 250px;
+  }
+
+  .form-style ul li .field-full {
+    width: 250px;
+    height: 70px;
+  }
+}

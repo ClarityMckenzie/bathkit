@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139058121-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139058121-1');
+  </script>
+
+
+  <meta charset="utf-8">
+  <title>Bath Kit</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+  <div id="loading-animation">
+
+    <img id="loading-image" src="enjoy.png" alt="Enjoy Yourself">
+  </div>
+
+  <header id="top-section">
+    <img id="logo" src="cone.png" alt="logo">
+
+    <nav>
+      <a id="aboutLink" href="#about-section">About</a>
+      <a id="productsLink" href="#products-section">Products</a>
+      <a id="contactLink" href="#contact-section">Contact</a>
+    </nav>
+
+    <div class="scrollbar"> </div>
+
+  </header>
+
+  <!-- about section  -->
+
+  <div id="about-section" class="container mainSection">
+    <div class="row">
+
+      <div id="intro-text" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+
+        <p> <b> Bath Kit</b>, exceptional bathing experiences through scent and story. Enjoy yourself; it's later than you think.</p><br>
+        <p> We're an experimental bath salt business based in Vancouver, British Columbia. Every product is thoughtfully designed, locally sourced, and handcrafted. Please write in for wholesale possibilities.</p><br>
+
+        <p> You could bathe in milk, wine, or chicken boullion, so thank you for choosing us instead.
+        </p>
+
+      </div>
+
+      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+        <img src="forest-bath.jpg" alt="man bathing in forest">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- products section  -->
+
+  <div id="products-section" class="container mainSection">
+
+    <div class="row">
+
+      <div id="lichen" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+        <img id="littleLichen" src="lichen.png" alt="lichen">
+
+      </div>
+
+      <div id="shinrin-text" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+        <p> <i>Shinrin yoku (森林浴) </i> lit. "forest bathing" is a term popularized by the Japanese government in 1982, describing the practice of walking in the woods for health benefits. Since then, there's been considerable research published on
+          the topic, like phytoncides, for instance. Of course, we recommend you try the real
+          thing. <br><br>
+
+          This blend is for the city folk and desert dwellers that could benefit from bringing a bit of the forest into their baths. </p>
+      </div>
+    </div>
+    <div class="row">
+
+      <div id="ingredients" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+        <ul>
+          <li>• Epsom salt</li>
+          <li>• Cedar balls</li>
+          <li>• Rhassoul clay</li>
+          <li>• Juniper berries</li>
+          <li>• Eucalyptus leaves</li>
+          <li>• Cypress, cedar & <br>oak moss oils</li>
+        </ul>
+
+      </div>
+
+      <div id="salt" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img id="saltImage" src="salt.png" alt="brown salt">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- contact section -->
+
+  <div id="contact-section" class="container mainSection">
+    <div class="row">
+
+      <div id="contact-form" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+        <form id="form" class="form-style">
+          <h3 id="contactTitle">Let's get in touch!</h3>
+
+          <ul>
+            <li>
+              <input id="name" type="text" name="name" class="field-style field-split " placeholder="Name" />
+
+            </li>
+            <li>
+              <input id="email" type="email" name="email" class="field-style field-split" placeholder="Email" required />
+            </li>
+
+            <li>
+              <input id="subject" type="text" name="subject" class="field-style field-split" placeholder="Subject" />
+            </li>
+            <li>
+
+              <input id="message" type="text" name="message" class="field-style field-full" placeholder="Message" required />
+            </li>
+            <li>
+
+              <input type="submit" value="Send" />
+            </li>
+          </ul>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<footer>
+
+  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 126" style="enable-background:new 0 0 1440 126;" xml:space="preserve">
+    <path class="st0" d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z" />
+  </svg>
+
+</footer>
+
+<script src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+</html>
